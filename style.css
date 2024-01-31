@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+.mainDisplay {
+    height: 100%;
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+.mainDisplay::-webkit-scrollbar {
+    display: none;
+}
+.playDisplay {
+    height: 100%;
+    width: 30%;
+}
+.card {
+    height: 240px;
+    width: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 5px;
+    cursor: pointer;
+
+}
+.img  {
+    height: 70%;
+    width: 100%;
+}
+.img img  {
+    height: 100%;
+    width: 100%;
+   object-fit: cover;
+}
+.songDtls {
+    height: 30%;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding-top: 10px;
+    padding-left: 5px;
+    color: #fff;
+    font-weight: lighter;
+    position: relative;
+}
+p {
+    margin-top: 10px;
+}
+.songDtls i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 25px;
+    color: #fff;
+}
+.playDisplay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playingSong {
+    height: 430px;
+    width: 300px;
+    background-color: #000;
+    padding: 20px;
+    border-radius: 15px;
+}
+.playingSong p {
+    color: #fff;
+    text-align: center;
+    
+}
+.playingSongImg {
+    height: 230px;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 30px;
+    background-image: url("https://c.saavncdn.com/546/Infinity-English-2019-20190325210151-500x500.jpg");
+    background-size: cover;
+}
+.seekbar{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border: 25px;
+    margin-top: 40px;
+}
+.songCtrl .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+    font-size: 30px;
+    margin-top: 20px;
+}
+i {
+    cursor: pointer;
+}
+
+
+@media (max-width:600px) {
+    .main {
+        flex-direction: column-reverse;
+        padding: 0px;
+
+    }
+    .mainDisplay {
+        height:35% ;
+        width: 100%;
+        padding: 0px;
+        justify-content: center;
+        overflow: visible;
+    
+    }
+    .playDisplay {
+        height: 65%;
+        width: 100%;
+        align-items: start;
+        padding: 10px;
+
+    }
+    .playingSong{
+        height: 400px;
+    }
+    .playingSongImg {
+        height: 220px;
+
+    }
+}
